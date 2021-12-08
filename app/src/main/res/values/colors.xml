@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000</color>
+    <!--<color name="colorAccent">#502FC6</color>-->
+    <color name="colorAccent">#2a6cc3</color>
+    <color name="colorTab">#FF4081</color>
+    <color name="highlightTab">#e79c0a</color>
+
+    <!--<color name="bg_start">#9A2DC6</color>-->
+    <!--<color name="bg_start">#402584</color>
+    <color name="bg_center">#7E2EC5</color>
+    <color name="bg_end">#502FC6</color>-->
+
+    <color name="bg_start">#143e7d</color>
+    <color name="bg_center">#2a6cc3</color>
+    <color name="bg_end">#2a6cc3</color>
+
+    <color name="coral_blue">#9A2DC6</color>
+    <color name="dark_blue">#502FC6</color>
+    <color name="light_gray">#F1F2F4</color>
+
+    <color name="change_blue">#3A30C4</color>
+    <color name="renew_red">#ED1B24</color>
+
+    <color name="info_font">#C1C1C1</color>
+    <color name="view_clr">#f1f1f1</color>
+    <color name="id_top_color">#2C3A43</color>
+    <color name="action_color">#e79c0a</color>
+    <color name="green">#32cd32</color>
+    <color name="gray">#dedbdb</color>
+
+    <color name="circleProgressCompleteStartGradient">@color/dark_blue</color>
+    <color name="circleProgressCompleteEndGradient">@color/coral_blue</color>
+    <color name="circleProgressIncompleteStartGradient">@color/light_gray</color>
+    <color name="circleProgressIncompleteEndGradient">@color/light_gray</color>
+
+    <color name="hdr_bck">#f3edf0</color>
+</resources>

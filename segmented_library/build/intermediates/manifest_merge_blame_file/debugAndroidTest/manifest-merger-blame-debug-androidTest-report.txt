@@ -1,0 +1,40 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.carlosmuvi.segmentedprogressbar.test" >
+4
+5    <uses-sdk
+5-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:5:15-41
+7        android:targetSdkVersion="24" />
+7-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:11:5-15:90
+10        android:name="android.support.test.runner.AndroidJUnitRunner"
+10-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:11:22-83
+11        android:functionalTest="false"
+11-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:13:22-53
+13        android:label="Tests for com.carlosmuvi.segmentedprogressbar.test"
+13-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:15:22-88
+14        android:targetPackage="com.carlosmuvi.segmentedprogressbar.test" />
+14-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:12:22-86
+15
+16    <application
+16-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:7:5-9:19
+17        android:allowBackup="true"
+17-->[__tested_artifact__::segmented_library] D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
+18        android:debuggable="true"
+18-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:7:18-43
+19        android:label="@string/app_name"
+19-->[__tested_artifact__::segmented_library] D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-41
+20        android:supportsRtl="true" >
+20-->[__tested_artifact__::segmented_library] D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
+21        <uses-library android:name="android.test.runner" />
+21-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:8:9-60
+21-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\segmented_library\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6851571930097982225.xml:8:23-57
+22    </application>
+23
+24</manifest>

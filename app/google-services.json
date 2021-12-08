@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "353783897359",
+    "firebase_url": "https://belradius-tripleplay.firebaseio.com",
+    "project_id": "belradius-tripleplay",
+    "storage_bucket": "belradius-tripleplay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353783897359:android:0ecaef2c14467b9d",
+        "android_client_info": {
+          "package_name": "cnergee.sbbroadband"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353783897359-htnq4ttsdpg4ag37jki49c1687o7oij1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr5cdPzDl0SkSwqRTE-yo83jm982NrJdo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

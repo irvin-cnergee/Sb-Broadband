@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="cn.pedant.SweetAlert"
+5    android:versionCode="2"
+6    android:versionName="1.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="16"
+9-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\sweet_alert_lib\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\sweet_alert_lib\src\main\AndroidManifest.xml
+11
+12    <application />
+12-->D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\sweet_alert_lib\src\main\AndroidManifest.xml:7:5-19
+13
+14</manifest>

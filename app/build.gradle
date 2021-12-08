@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "cnergee.sbbroadband"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':ViewPagerIndicator-Library')
+    compile project(':segmented_library')
+    compile project(':calendar_library')
+    compile project(':clock_library')
+    compile project(':sweet_alert_lib')
+    compile project(':dialog_anim_lib')
+    compile project(':country_code')
+    //    compile project(':expand_lib')
+    compile files('libs/otto-1.3.5.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile('com.squareup.retrofit2:retrofit:2.1.0') {
+        exclude module: 'okhttp'
+    }
+    compile 'com.android.support:multidex:1.0.2'
+    //noinspection GradleCompatible
+    compile "com.android.support:support-compat:25.4.0"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-vector-drawable:25.4.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:cardview-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.google.android.gms:play-services-maps:11.4.2'
+    compile 'com.github.aakira:expandable-layout:1.4.2@aar'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    //    compile 'org.apache.commons:commons-io:1.3.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-messaging:11.4.2'
+    compile 'com.firebase:firebase-jobdispatcher:0.5.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

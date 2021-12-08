@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\calendar_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\calendar_library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "30,31,32,33,34,38,41",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2043,2082,2128,2172,2224,2474,2654",
+                        "endLines": "30,31,32,33,37,40,43",
+                        "endColumns": "38,45,43,51,12,12,12",
+                        "endOffsets": "2077,2123,2167,2219,2469,2649,2829"
+                    }
+                }
+            ]
+        }
+    ]
+}

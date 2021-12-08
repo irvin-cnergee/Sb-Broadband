@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/home_scroll"
+    android:focusableInTouchMode="true"
+    android:background="#e9e9e9"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <developer.app.loadingview.ProgressWheel
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            wheel:matProg_circleRadius="@dimen/wheel_radius"
+            android:visibility="gone"
+            wheel:matProg_progressIndeterminate="true"
+            wheel:matProg_barColor="@color/bg_end"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_size"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="false"
+                app:radius="@dimen/indicator_size"
+                app:fillColor="@color/bg_end"
+                app:pageColor="@android:color/transparent"
+                app:snap="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:padding="10dp">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circle_progress_background" />
+
+                <ProgressBar
+                    android:id="@+id/circle_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:max="100"
+                    android:rotation="-90"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/circle_progress_foreground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/compliance_total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internet"
+                        android:gravity="center"
+                        android:textSize="@dimen/default_text_size"
+                        android:textAllCaps="true"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black" />
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_used_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_total_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/circle_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.carlosmuvi.segmentedprogressbar.SegmentedProgressBar
+                        android:id="@+id/segmented_progressbar"
+                        android:layout_width="300dp"
+                        android:layout_height="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_remaining"
+                        android:layout_below="@+id/segmented_progressbar"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:textSize="@dimen/sub_hdr_size"
+                        android:textColor="@android:color/black"
+                        app:fontName="@string/font_name"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_internet"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Internet"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="9">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_isp_pckg_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_isp_validity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:textColor="@android:color/black"
+                        android:text="\u20B9 365"
+                        android:textSize="@dimen/default_text_size"
+                        android:visibility="gone"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/btn_int_cng_pckg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="Change Package"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/change_pckg_round"
+                        android:textSize="@dimen/default_text_size"
+                        android:clickable="true"
+                        app:fontName="@string/font_name"
+                        android:onClick="showResponse"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_isp_renew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="9">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_isp_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_isp_exp_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/btn_int_renew"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="Renew"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/renew_round"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:clickable="true"
+                        android:onClick="showResponse"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_isp_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="9"
+                    android:visibility="gone">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_hdr_size"
+                        app:fontName="@string/font_name"
+                        android:text="No Package Available"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_expire"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Internet"
+                android:textStyle="bold"
+                android:textSize="@dimen/default_hdr_size"
+                app:fontName="@string/font_bold"
+                android:textColor="@android:color/black"/>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_cable"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TV"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="9">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_cbl_pck_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_cbl_validity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        android:visibility="gone"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/btn_cbl_chng_pck"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="Change Package"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/change_pckg_round"
+                        android:textSize="@dimen/default_text_size"
+                        android:clickable="true"
+                        android:onClick="showResponse"
+                        app:fontName="@string/font_name"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="9">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_cbl_pck_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_cbl_exp_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/btn_cbl_renew"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="Renew"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/renew_round"
+                        android:textSize="@dimen/default_text_size"
+                        android:clickable="true"
+                        android:onClick="showResponse"
+                        app:fontName="@string/font_name"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rv_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/tv_history_hdr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Renewal History"
+                android:textStyle="bold"
+                android:textSize="@dimen/default_hdr_size"
+                android:textColor="@android:color/black"
+                app:fontName="@string/font_bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tv_history_hdr"
+                android:id="@+id/rv_renew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tv_history_hdr"
+                android:id="@+id/tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@android:color/black"
+                app:fontName="@string/font_name"/>
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/unique_bg"
+    tools:context="cnergee.sbbroadband.UniqueCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/belradius"
+            android:padding="50dp"/>
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Enter Unique Code"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_bold"
+            android:gravity="center"
+            android:textSize="@dimen/default_hdr_size"/>
+
+        <cnergee.sbbroadband.widgets.MyEditText
+            android:id="@+id/et_unique"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+        <cnergee.sbbroadband.widgets.MyButton
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:padding="10dp"
+            app:fontName_button="@string/font_name"
+            android:textColor="@android:color/white"
+            android:background="@drawable/unique_background"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

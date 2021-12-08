@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="10dp">
+
+    <cnergee.sbbroadband.widgets.MyTextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:fontName="@string/font_name"
+        android:text="@string/date_time"/>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="all"
+        app:mcv_arrowColor="@android:color/black"
+        app:mcv_leftArrowMask="@drawable/ic_back"
+        app:mcv_rightArrowMask="@drawable/ic_forward"
+        app:mcv_selectionColor="@color/bg_end"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_weekDayLabels="@array/custom_weekdays"
+        app:mcv_monthLabels="@array/custom_months"
+        app:mcv_tileSize="36dp"
+        app:mcv_firstDayOfWeek="sunday"
+        app:mcv_calendarMode="week"
+        app:mcv_titleAnimationOrientation="vertical"/>
+
+    <picker.ugurtekbas.com.Picker.Picker
+        android:layout_marginTop="15dp"
+        android:id="@+id/amPicker"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        app:hourFormat="false"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp">
+
+        <cnergee.sbbroadband.widgets.MyEditText
+            android:id="@+id/met_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:hint="@string/hint_comment"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:fontName="@string/font_name"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <cnergee.sbbroadband.widgets.MyButton
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        app:fontName_button="@string/font_name"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/change_pckg_round"/>
+
+</LinearLayout>

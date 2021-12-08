@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:2:5-50
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:4:3-9:17
+	android:supportsRtl
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:6:7-33
+	android:label
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:5:7-39
+	android:allowBackup
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml:4:16-42
+uses-sdk
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		ADDED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml
+		INJECTED from D:\Sb Broadband\Sb Broadband\Sb Broadband\segmented_library\src\main\AndroidManifest.xml

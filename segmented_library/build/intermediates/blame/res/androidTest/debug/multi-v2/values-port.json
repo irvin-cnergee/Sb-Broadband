@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\segmented_library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jyoti\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-24.2.0.aar\\1fff50ce341663ba8797d6da8106abde\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

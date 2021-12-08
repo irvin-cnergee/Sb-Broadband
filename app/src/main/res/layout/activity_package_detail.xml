@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Payable"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_rupees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_rupees3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNG 6M30UL"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="@dimen/sub_hdr_size"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_internet"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/rl_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Package Update From"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:textColor="@android:color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/radioPayMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <RadioButton
+                        android:id="@+id/radioRenew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sub_hdr_size"
+                        android:text="Advance Renewal" />
+
+                    <RadioButton
+                        android:id="@+id/radioAdj"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sub_hdr_size"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate Renewal" />
+
+                    <RadioButton
+                        android:id="@+id/radioimmadj"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sub_hdr_size"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate with Adjustment" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/rl_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Payment Through"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Online Payment"
+                            android:textSize="@dimen/default_hdr_size"
+                            android:textColor="@android:color/black"/>
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/onlinepayment_active"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pickup Request"
+                            android:textSize="@dimen/default_hdr_size"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/textView2" />
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/onlinepayment_active"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="15dp"
+                android:background="@drawable/change_pckg_round">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Coupon Code"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/textView3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="15dp"
+                android:background="@drawable/change_pckg_round">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Apply"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/simpleCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_condition"
+                android:checked="true"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/change_pckg_round"/>
+
+
+    </LinearLayout>
+</ScrollView>
+

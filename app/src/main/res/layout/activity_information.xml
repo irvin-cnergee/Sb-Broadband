@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="cnergee.sbbroadband.InformationActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_personal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="1dp"
+            cardview:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Personal Details"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/circleProgressCompleteStartGradient"
+                    app:fontName="@string/font_name"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Subscriber Name"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Priyanka Pawar"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Subscriber ID"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="1234562"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_vertical">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Mobile No"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="123456789"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Address"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_marginBottom="2dp"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/address"
+                        android:textSize="@dimen/default_text_size"
+                        android:maxLines="3"
+                        android:layout_gravity="center"
+                        android:singleLine="false"
+                        android:lineSpacingMultiplier="1.5"
+                        android:layout_marginTop="10dp"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_pckg1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="1dp"
+            cardview:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Package Details"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/circleProgressCompleteStartGradient"
+                    app:fontName="@string/font_name"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Package Name"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="CNG 12UL"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Package Amount"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/rs"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_vertical">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Active"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_pckg"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="1dp"
+            cardview:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Amount Details"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/circleProgressCompleteStartGradient"
+                    app:fontName="@string/font_name"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Additional Amount"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/rs"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Discoun Amount"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/rs"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left"
+                        android:text="Fine Amount"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/rs"
+                        android:gravity="right"
+                        android:textSize="@dimen/default_text_size"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_clr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="right">
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:id="@+id/tv_totalamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        android:gravity="right"
+                        app:fontName="@string/font_name"
+                        android:textColor="@android:color/black"/>
+
+                    <!--<cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="@string/total_rs"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        app:fontName="@string/font_name"
+                        android:textColor="@color/info_font"/>-->
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_upgrade_pkg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/upgrade_pkg"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Change Package"
+                    android:textSize="12sp"
+                    app:fontName="@string/font_name"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_renew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/renew"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Renew"
+                    android:textSize="12sp"
+                    app:fontName="@string/font_name"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_upgrade_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/update_status"
+                    android:padding="12dp"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Update Status"
+                    android:textSize="12sp"
+                    app:fontName="@string/font_name"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Launch_comp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/launch_comp"
+                    android:padding="12dp"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Launch Complaint"
+                    android:textSize="12sp"
+                    app:fontName="@string/font_name"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<cnergee.sbbroadband.widgets.CircleAnimatedCheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbox_selector_light"
+            android:focusable="false"
+            android:scaleX="1.20"
+            android:scaleY="1.20"
+            app:cb_color="#CC33b5e5"
+            app:cb_pressed_ring_width="2dp"/>
+-->
+      </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

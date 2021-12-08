@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,13,23,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,161,207,257,303,348,394,558,1056,1568",
+                        "endLines": "2,3,4,5,6,7,8,12,22,32,35",
+                        "endColumns": "51,53,45,49,45,44,45,12,12,12,12",
+                        "endOffsets": "102,156,202,252,298,343,389,553,1051,1563,1631"
+                    }
+                }
+            ]
+        }
+    ]
+}

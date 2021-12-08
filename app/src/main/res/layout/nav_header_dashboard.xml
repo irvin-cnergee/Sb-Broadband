@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:src="@drawable/splash_logo"/>
+
+
+    <!--<LinearLayout
+        android:id="@+id/ll_hdr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/person"
+            android:gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="User Name"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                app:fontName="@string/font_name"
+                android:textColor="@android:color/black"/>
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:gravity="top|center|left"
+                android:text="3Mbps_30UL | \u20B9 360"
+                app:fontName="@string/font_name"
+                android:visibility="gone"
+                android:textColor="#9C99DE"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+
+
+
+</RelativeLayout>

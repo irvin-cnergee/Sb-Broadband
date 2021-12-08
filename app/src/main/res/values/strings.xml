@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">SB Broadband</string>
+    <string name="name">SB Broadband</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="port">9095</string>
+    <!--<string name="ip">http://103.54.183.99:9095</string>-->
+    <!--<string name="ip">http://103.240.232.67:4010</string> &lt;!&ndash;triple play-->
+    -->
+<!--    <string name="ip">http://103.86./106.214:4010</string>-->
+
+    <string name="ip">https://sbbroadband.in</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_transaction">MyTransactionActivity</string>
+
+    <string name="full_name">FULL NAME</string>
+    <string name="user_id">USER ID</string>
+    <string name="email">EMAIL</string>
+    <string name="password">Password</string>
+    <string name="birthday">BIRTHDAY</string>
+    <string name="gender">GENDER</string>
+    <string name="submit">SUBMIT</string>
+    <string name="notifications">Notifications</string>
+    <string name="hint_address">ADDRESS</string>
+    <string name="date_time">Select Date and Time</string>
+
+    <string name="delete_label">Deleted</string>
+
+    <string name="undo_label"><u>Undo</u></string>
+
+
+    <string name="rs">\u20B9 500</string>
+    <string name="total_rs">\u20B9 2000</string>
+    <!--<string name="terms_condition">I have read and accepted the <color><u> Terms and Condition , Privacy policy , Cancellation and Refund Policy.</u></color></string>-->
+    <string name="terms_condition">I have read and accepted the <color><u>Terms and Condition.</u></color></string>
+
+    <string name="title_activity_make_payment">Make Payment</string>\
+
+    <string-array name="custom_weekdays">
+        <item>Su</item>
+        <item>M</item>
+        <item>Tu</item>
+        <item>W</item>
+        <item>Th</item>
+        <item>F</item>
+        <item>Sa</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>JAN</item>
+        <item>Feb</item>
+        <item>MARCH</item>
+        <item>April</item>
+        <item>MAY</item>
+        <item>June</item>
+        <item>JULY</item>
+        <item>Aug</item>
+        <item>SEPT</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string name="hint_comment">Comment</string>
+    <string name="call">Customer Service</string>
+    <string name="self_resolution">Self Resolution</string>
+    <string name="reach_us">Reach us by selecting the complaint below</string>
+    <string name="select_category">Complaint Type</string>
+
+    <string name="choose_file">Upload Image</string>
+    <string name="selected_file">File name(.png,.jpg)</string>
+    <string name="enter_comment">Please write your comment here...</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hint_email">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_otp">OTP</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="resend_otp">Resend OTP ? </string>
+    <string name="address">s-7-11,Arenja Towers,Plot no 49-51,Sector - 11,CBD Belapur,Navi Mumbai 4000614</string>
+    <string name="font_name">DroidSerif_Regular.ttf</string>
+    <string name="font_bold">DroidSerif_Bold.ttf</string>
+    <string name="title_activity_collection_payment">CollectionPaymentActivity</string>
+    <string name="search_hint">Search...</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="personal_info">Personal Information</string>
+    <string name="username">User Name</string>
+    <string name="userid">User ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact">Mobile Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="hint_gender">Gender</string>
+    <string name="city">city</string>
+    <string name="country">country</string>
+
+    <string name="quick_res">Quick Resolution</string>
+    <string name="current_status">Current Status</string>
+    <string name="resolution">Resolution</string>
+    <string name="acc_status">Account Status</string>
+    <string name="pckg_valid">Package Valid Till</string>
+    <string name="curr_pckg">Current Package</string>
+
+    <string name="tckt_info">Ticket Information</string>
+    <string name="created_by">Created By</string>
+    <string name="created_on">Created On</string>
+    <string name="category">Category</string>
+    <string name="company">Company</string>
+    <string name="tckt_id">Ticket ID : CNG101564789</string>
+    <string name="status">Status</string>
+
+    <string name="history">User History</string>
+    <string name="back_to_home"><u>Back to home</u></string>
+
+    <string name="other_info">Other Information</string>
+    <string name="bill_scheme">Billing Scheme</string>
+    <string name="conn_type">Connection Type</string>
+    <string name="auth_type">Connection Type</string>
+    <string name="no_mac">Number of MAC Allowed</string>
+    <string name="id_proof">ID Proof</string>
+    <string name="id_no">ID Proof Number</string>
+    <string name="addrs_proof">Address Proof</string>
+    <string name="addrs_proof_no">Address Proof Number</string>
+    <string name="visit_dt">Visit Date</string>
+
+    <string name="loc_info">Location Information</string>
+    <string name="area">Area</string>
+    <string name="loc">Location</string>
+    <string name="bldgn">Building</string>
+    <string name="flat">Flat No</string>
+    <string name="floor">Floor</string>
+    <string name="tower">Tower</string>
+    <string name="add_1">Address Line 1</string>
+    <string name="add_2">Address Line 1</string>
+    <string name="post_code">Postal Code</string>
+    <string name="type_pre">Type of Premises</string>
+    <string name="source">Source</string>
+    <string name="agent">Field Agent Name</string>
+
+    <string name="last_pay">Last Payment Details</string>
+    <string name="amnt">Amount</string>
+    <string name="date">Date</string>
+    <string name="cheq_no">Cheque Number</string>
+    <string name="trans_type">Transaction Type</string>
+
+    <string name="renew_sub">Renew Subscriber</string>
+    <string name="cur_pckg_status">Current Package Status</string>
+    <string name="pckg_type">Package type</string>
+    <string name="sel_pckg">Select Package</string>
+    <string name="renew_mode">Renewal Mode</string>
+    <string name="regular">Regular</string>
+    <string name="immediate">Immediate</string>
+    <string name="immediate_adj">Immediate with Adjustment</string>
+    <string name="pay_type">Payment Type</string>
+    <string name="full_pay">Full Payment</string>
+    <string name="part_pay">Partial Payment</string>
+    <string name="renew_req">Renewal Request</string>
+    <string name="sms_link">SMS Link</string>
+    <string name="pckg_price">Package Price</string>
+    <string name="adjustment">Adjustment</string>
+    <string name="pay_amnt">Payable Amount</string>
+    <string name="chng_amnt">Change Amount</string>
+    <string name="pay_mode">Payment Mode</string>
+    <string name="cash">Cash</string>
+    <string name="cheque">Cheque</string>
+    <string name="dd">DD</string>
+    <string name="edc">EDC</string>
+    <string name="neft">NEFT</string>
+    <string name="schedule">Schedule</string>
+    <string name="renew">Renew</string>
+    <string name="part_amnt">Partial Amount</string>
+    <string name="pay_made">Payment to be made in</string>
+    <string name="dd_edc">Cheque/DD/EDC/NEFT No.</string>
+    <string name="bank_name">Bank Name</string>\
+
+    <string name="pckg_history">Package History</string>
+    <string name="tckt_history">Ticket History</string>
+    <string name="label_ok">Ok</string>
+
+    <string name="soap_fault">Oops...Some data mismatch!</string>
+    <string name="soap_timeout">Oops...May be slow connection!</string>
+    <string name="error">Oops...Something went wrong!</string>
+    <string name="internet_error_msg">Internet Connection not available</string>
+
+    <string name="please_wait">Please Wait....</string>
+    <string name="went_wrong">Something went wrong</string>
+    <string name="oops">Oops...</string>
+    <string name="no_data">No Data Available</string>
+    <string name="profile_update">Profile updated successfully</string>
+
+
+    <string name="err_email">Please enter Email Id</string>
+    <string name="err_password">Please enter Password</string>
+    <string name="err_mobile">Please enter valid mobile number</string>
+    <string name="err_otp">Please enter OTP</string>
+
+    <string name="trans_title">My Transactions</string>
+    <string name="profile_title">Profile</string>
+    <string name="service_title">Service</string>
+    <string name="help_title">Help</string>
+
+    <string name="update_title">Update Available</string>
+    <string name="update_btn">Update now</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="update_msg">New Version of BEL Radius MyApp is now Available. \n\nPlease Visit Play Store to Update!</string>
+    <string name="playstore_url">http://play.google.com/store/apps/details?id=</string>
+
+    <string name="order_no">Order No.</string>
+    <string name="subscriber_id">Subscriber Id</string>
+    <string name="package_name">Package Name</string>
+    <string name="trans_date">Transaction Date</string>
+    <string name="back"><u>Back</u></string>
+    <string name="active_flag_msg">You are allowed to use app only on one device</string>
+
+    <string name="describe_complaint">Describe Complaint</string>
+    <string name="message">Comment</string>
+
+    <string name="bck_dashboard"><u>Back to Dashboard</u></string>
+    <string name="renew_date">Renew Date</string>
+    <string name="start_date">Package Start Date</string>
+    <string name="end_date">Package End Date</string>
+
+</resources>

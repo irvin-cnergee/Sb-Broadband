@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="main_url">http://100.64.101.101:6040/tripleplaynode/</string>-->
+    <string name="main_url">http://100.64.101.101:7040/mobile/</string>
+    <string name="GET_LOGIN_DETAILS">auth/login</string>
+    <string name="GET_PROFILE_DETAILS">profile_details</string>
+    <string name="UPDATE_PROFILE_DETAILS">update_profile_details</string>
+    <string name="GET_LANGUAGES">get_languages</string>
+    <string name="GET_TRANSACTIONS">get_transaction_details</string>
+    <string name="GET_PACKAGES">get_packages_by_connection_type</string>
+    <string name="GET_USAGES">internet_usage_details</string>
+
+    <!--<string name="payment_url">http://103.54.183.99:9090/payment?id=</string>-->
+    <string name="payment_url">http://103.54.183.112:4010/payment?id=</string>
+
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\src\main\res"/><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\build\generated\res\rs\release"/><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\build\generated\res\resValues\release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\src\main\res"><file path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="Picker">
+        <attr format="color" name="canvasColor"/>
+
+        <attr format="color" name="clockColor"/>
+
+        <attr format="color" name="textColor"/>
+
+        <attr format="string" name="fontName"/>
+
+        <attr format="color" name="dialColor"/>
+
+        <attr format="boolean" name="hourFormat"/>
+
+        <attr format="dimension" name="trackSize"/>
+
+        <attr format="dimension" name="dialRadius"/>
+
+    </declare-styleable><string name="outOfRangeExceptionMessage"> Time value is out of range. \n "hour" value must be between 0 and 24, "minute" value must be between 0 and 60 </string><string name="outOfRangeExceptionMessage2"> Time value is out of range. \n "hour" value must be between 0 and 12, "minute" value must be between 0 and 60 </string></file></source><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\build\generated\res\rs\release"/><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\build\generated\res\resValues\release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\src\release\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\JYOTI WORKSPACE\Sb Broadband\Sb Broadband\clock_library\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="Picker">
+        <attr format="color" name="canvasColor"/>
+
+        <attr format="color" name="clockColor"/>
+
+        <attr format="color" name="textColor"/>
+
+        <attr format="string" name="fontName"/>
+
+        <attr format="color" name="dialColor"/>
+
+        <attr format="boolean" name="hourFormat"/>
+
+        <attr format="dimension" name="trackSize"/>
+
+        <attr format="dimension" name="dialRadius"/>
+
+    </declare-styleable></configuration></mergedItems></merger>

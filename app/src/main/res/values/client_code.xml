@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="client_access_id">BR1711141544</string> &lt;!&ndash;tripleplay&ndash;&gt;-->
+    <string name="client_access_id">BR1804303944</string>
+    <!--<string name="client_access_id">BR1707143401</string>--> <!--uat-->
+   <!-- <string name="entity_id">1</string>-->
+    <string name="for_whome">Subscriber</string>
+</resources>

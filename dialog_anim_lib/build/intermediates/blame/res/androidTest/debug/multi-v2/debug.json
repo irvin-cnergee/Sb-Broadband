@@ -1,0 +1,127 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v3_values-v3.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-v3\\values-v3.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,697",
+                        "endLines": "11,14",
+                        "endColumns": "16,16",
+                        "endOffsets": "692,833"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w600dp-v13_values-w600dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w360dp-v13_values-w360dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-w360dp-v13\\values-w360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w480dp-v13_values-w480dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "199"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w720dp-v13_values-w720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-w720dp-v13\\values-w720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,13,23,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,161,207,257,303,348,394,558,1056,1568",
+                        "endLines": "2,3,4,5,6,7,8,12,22,32,35",
+                        "endColumns": "51,53,45,49,45,44,45,12,12,12,12",
+                        "endOffsets": "102,156,202,252,298,343,389,553,1051,1563,1631"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w500dp-v13_values-w500dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\dialog_anim_lib\\build\\intermediates\\bundles\\debug\\res\\values-w500dp-v13\\values-w500dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

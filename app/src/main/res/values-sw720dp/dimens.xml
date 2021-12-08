@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_text_size">17dp</dimen>
+    <dimen name="default_hdr_size">19dp</dimen>
+    <dimen name="banner_size">250dp</dimen>
+    <dimen name="indicator_size">7dp</dimen>
+    <dimen name="circleProgressRadius">100dp</dimen>
+    <dimen name="circleProgressThickness">27dp</dimen>
+    <dimen name="progressbar_height">270dp</dimen>
+    <dimen name="wheel_radius">70dp</dimen>
+    <dimen name="profile_img_width">150dp</dimen>
+    <dimen name="profile_img_height">150dp</dimen>
+    <dimen name="profile_hdr">15dp</dimen>
+    <dimen name="profile_txt">19dp</dimen>
+    <dimen name="sub_hdr_size">19dp</dimen>
+    <dimen name="action_img_size">150dp</dimen>
+    <dimen name="toggle_width">140dp</dimen>
+    <dimen name="toggle_height">45dp</dimen>
+    <dimen name="pay_amnt_size">45sp</dimen>
+</resources>

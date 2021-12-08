@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Picker"><attr format="color" name="canvasColor"/><attr format="color" name="clockColor"/><attr format="color" name="textColor"/><attr format="string" name="fontName"/><attr format="color" name="dialColor"/><attr format="boolean" name="hourFormat"/><attr format="dimension" name="trackSize"/><attr format="dimension" name="dialRadius"/></declare-styleable>
+    <string name="outOfRangeExceptionMessage"> Time value is out of range. \n "hour" value must be between 0 and 24, "minute" value must be between 0 and 60 </string>
+    <string name="outOfRangeExceptionMessage2"> Time value is out of range. \n "hour" value must be between 0 and 12, "minute" value must be between 0 and 60 </string>
+</resources>

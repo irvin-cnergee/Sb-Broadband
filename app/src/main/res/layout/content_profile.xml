@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <developer.app.loadingview.ProgressWheel
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            wheel:matProg_circleRadius="@dimen/wheel_radius"
+            android:visibility="gone"
+            wheel:matProg_progressIndeterminate="true"
+            wheel:matProg_barColor="@color/bg_end"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/profile_img_width"
+                android:layout_height="@dimen/profile_img_height"
+                android:src="@drawable/person"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/profile_txt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textSize="@dimen/profile_hdr"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textSize="@dimen/profile_txt"
+                    app:fontName="@string/font_name"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userid"
+                    android:textSize="@dimen/profile_hdr"
+                    android:textAllCaps="true"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:id="@+id/et_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textSize="@dimen/profile_txt"
+                    app:fontName="@string/font_name"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="@dimen/profile_hdr"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:id="@+id/et_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textSize="@dimen/profile_txt"
+                    app:fontName="@string/font_name"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_hdr"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday"
+                    android:textSize="@dimen/profile_hdr"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:id="@+id/et_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textSize="@dimen/profile_txt"
+                    app:fontName="@string/font_name"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="@dimen/profile_hdr"
+                    app:fontName="@string/font_bold"
+                    android:textColor="@android:color/black"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        app:fontName_radio="@string/font_name"
+                        android:buttonTint="@color/colorAccent"
+                        android:enabled="false"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        app:fontName_radio="@string/font_name"
+                        android:buttonTint="@color/colorAccent"
+                        android:enabled="false"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/profile_hdr"
+                    android:orientation="vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:textSize="@dimen/profile_hdr"
+                        android:textAllCaps="true"
+                        app:fontName="@string/font_bold"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyEditText
+                        android:id="@+id/et_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textSize="@dimen/profile_txt"
+                        android:inputType="phone"
+                        app:fontName="@string/font_name"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/profile_hdr"
+                    android:orientation="vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_address"
+                        android:textSize="@dimen/profile_hdr"
+                        app:fontName="@string/font_bold"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyEditText
+                        android:id="@+id/et_addrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textSize="@dimen/profile_txt"
+                        app:fontName="@string/font_name"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/profile_hdr"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city"
+                        android:textSize="@dimen/profile_hdr"
+                        android:textAllCaps="true"
+                        app:fontName="@string/font_bold"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyEditText
+                        android:id="@+id/et_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textSize="@dimen/profile_txt"
+                        app:fontName="@string/font_name"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country"
+                        android:textSize="@dimen/profile_hdr"
+                        android:textAllCaps="true"
+                        app:fontName="@string/font_bold"
+                        android:textColor="@android:color/black"/>
+
+                    <cnergee.sbbroadband.widgets.MyEditText
+                        android:id="@+id/et_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textSize="@dimen/profile_txt"
+                        app:fontName="@string/font_name"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <cnergee.sbbroadband.widgets.MyButton
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/submit"
+                android:padding="10dp"
+                android:visibility="gone"
+                app:fontName_button="@string/font_name"
+                android:textColor="@android:color/white"
+                android:background="@drawable/change_pckg_round"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

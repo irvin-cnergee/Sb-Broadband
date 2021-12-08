@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cnergee.sbbroadband.CollectionPaymentActivity"
+    tools:showIn="@layout/activity_collection_payment"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_updatefrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="1dp"
+            android:layout_marginTop="8dp"
+            cardview:cardElevation="5dp">
+            <LinearLayout
+                android:id="@+id/ll_updatefrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Package Update From"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/circleProgressCompleteStartGradient"
+                    app:fontName="@string/font_name"/>
+
+                <RadioGroup
+                    android:id="@+id/radioUpdateFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioRenew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:text="Advance Renewal"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioAdj"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate Renewal"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioimmadj"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate with Adjustment"
+                        app:fontName_radio="@string/font_name"/>
+                </RadioGroup>
+            </LinearLayout>
+         </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_paytype"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="1dp"
+            android:layout_marginBottom="8dp"
+            cardview:cardElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Payment Type"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/circleProgressCompleteStartGradient"
+                    app:fontName="@string/font_name"/>
+
+                <RadioGroup
+                    android:id="@+id/radioPayType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radiofullpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:text="Full Payment"
+                        app:fontName_radio="@string/font_name" />
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radiopartial"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="Partial Payment"
+                        app:fontName_radio="@string/font_name"
+                        />
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioisma"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="SMS Link"
+                        app:fontName_radio="@string/font_name"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/ll_partial_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.4">
+
+                        <cnergee.sbbroadband.widgets.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Partial Amount"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@android:color/black"
+                            app:fontName="@string/font_name"/>
+
+                        <cnergee.sbbroadband.widgets.MyEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/et_box"
+                            android:hint=""
+                            android:inputType="number"
+                            android:gravity="left"
+                            android:textSize="@dimen/default_text_size"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            app:fontName="@string/font_name"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.6">
+
+                        <cnergee.sbbroadband.widgets.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Payment to be made in"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@android:color/black"
+                            app:fontName="@string/font_name"/>
+
+                        <Spinner
+                            android:id="@+id/sp_allowdays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_paymode"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardCornerRadius="1dp"
+        android:layout_marginBottom="8dp"
+        cardview:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Payment Mode"
+                android:textStyle="bold"
+                android:textSize="@dimen/default_hdr_size"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/circleProgressCompleteStartGradient"
+                app:fontName="@string/font_name"/>
+
+            <cnergee.sbbroadband.widgets.MultiRowsRadioGroup
+                android:id="@+id/radiopaymode"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radiocash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:text="Cash"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radiocheque"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="Cheque"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radiodd"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="DD"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioedc"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="EDC"
+                        app:fontName_radio="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyRadioButton
+                        android:id="@+id/radioneft"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_height="wrap_content"
+                        android:text="NEFT"
+                        app:fontName_radio="@string/font_name"/>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <cnergee.sbbroadband.widgets.MyRadioButton
+                            android:id="@+id/radioedc"
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/default_text_size"
+                            android:layout_height="wrap_content"
+                            android:text="DD"
+                            app:fontName_radio="@string/font_name"/>
+
+                        <cnergee.sbbroadband.widgets.MyRadioButton
+                            android:id="@+id/radioneft"
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/default_text_size"
+                            android:layout_height="wrap_content"
+                            android:text="NEFT"
+                            app:fontName_radio="@string/font_name"/>
+                    </LinearLayout>-->
+                </LinearLayout>
+           </cnergee.sbbroadband.widgets.MultiRowsRadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/ll_bank_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="10dp">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Cheque/DD/EDC/NEFT No"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_text_size"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#B5B5B5"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/et_box"
+                    android:hint=""
+                    android:inputType="number"
+                    android:gravity="left"
+                    android:textSize="@dimen/default_text_size"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Bank Name"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_text_size"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#B5B5B5"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/et_box"
+                    android:hint=""
+                    android:gravity="left"
+                    android:inputType="text"
+                    android:textSize="@dimen/default_text_size"
+                    android:padding="8dp"
+                    app:fontName="@string/font_name"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+     </android.support.v7.widget.CardView>
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp">
+            <cnergee.sbbroadband.widgets.MyButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Make Payment"
+                android:padding="10dp"
+                android:textSize="@dimen/default_hdr_size"
+                android:textColor="@android:color/white"
+                android:background="@drawable/change_pckg_round"
+                app:fontName_button="@string/font_name"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

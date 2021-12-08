@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Jyoti\\Jyoti\\Studio Workspace\\BEL_RADIUS Workspace\\BELRADIUS MYAPP\\Sb Broadband\\sweet_alert_lib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w720dp-v13\\values-w720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jyoti\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.0.aar\\2e82d523d58ef3d8d0e4a163a9814b2b\\res\\values-w720dp\\values.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "76",
+                        "endOffsets": "128"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "76",
+                        "endOffsets": "127"
+                    }
+                }
+            ]
+        }
+    ]
+}

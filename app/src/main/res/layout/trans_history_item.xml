@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+
+            <cnergee.sbbroadband.widgets.CircleView
+                android:id="@+id/circleview"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                app:cv_subtitleText=""
+                app:cv_titleSize="15dp"
+                app:cv_subtitleSize="9dp"
+                app:cv_titleColor="@android:color/black"
+                app:cv_backgroundColorValue="@android:color/white"
+                app:cv_fillRadius="0.9"
+                app:cv_strokeWidthSize="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="5dp"
+            android:gravity="left|top"
+            android:orientation="vertical">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/trans_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sub_hdr_size"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:fontName="@string/font_name"/>
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/trans_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size"
+                app:fontName="@string/font_name"
+                android:textColor="@android:color/black"/>
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/trans_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size"
+                app:fontName="@string/font_name"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/amnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_end"
+                android:textSize="@dimen/default_hdr_size"
+                android:gravity="center|right"
+                app:fontName="@string/font_bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

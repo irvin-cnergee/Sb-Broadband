@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center">
+
+        <cnergee.sbbroadband.widgets.CircleView
+            android:id="@+id/circleview"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cv_subtitleText=""
+            app:cv_titleSize="25dp"
+            app:cv_subtitleSize="9dp"
+            app:cv_titleColor="@android:color/white"
+            app:cv_backgroundColorValue="@android:color/white"
+            app:cv_strokeColorValue="@android:color/black"
+            app:cv_fillRadius="0.9"
+            app:cv_strokeWidthSize="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.3"
+        android:orientation="vertical">
+
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_subname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dfas"
+            android:textSize="@dimen/default_hdr_size"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"/>
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_adrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dfas"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"/>
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_tckt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dfas"
+            android:textSize="@dimen/default_text_size"
+            app:fontName="@string/font_name"/>
+
+    </LinearLayout>
+
+</LinearLayout>

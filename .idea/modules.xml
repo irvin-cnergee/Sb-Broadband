@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sb_Broadband.iml" filepath="$PROJECT_DIR$/.idea/modules/Sb_Broadband.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ViewPagerIndicator-Library/Sb_Broadband.ViewPagerIndicator-Library.iml" filepath="$PROJECT_DIR$/.idea/modules/ViewPagerIndicator-Library/Sb_Broadband.ViewPagerIndicator-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sb_Broadband.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sb_Broadband.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calendar_library/Sb_Broadband.calendar_library.iml" filepath="$PROJECT_DIR$/.idea/modules/calendar_library/Sb_Broadband.calendar_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clock_library/Sb_Broadband.clock_library.iml" filepath="$PROJECT_DIR$/.idea/modules/clock_library/Sb_Broadband.clock_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/country_code/Sb_Broadband.country_code.iml" filepath="$PROJECT_DIR$/.idea/modules/country_code/Sb_Broadband.country_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dialog_anim_lib/Sb_Broadband.dialog_anim_lib.iml" filepath="$PROJECT_DIR$/.idea/modules/dialog_anim_lib/Sb_Broadband.dialog_anim_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/segmented_library/Sb_Broadband.segmented_library.iml" filepath="$PROJECT_DIR$/.idea/modules/segmented_library/Sb_Broadband.segmented_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sweet_alert_lib/Sb_Broadband.sweet_alert_lib.iml" filepath="$PROJECT_DIR$/.idea/modules/sweet_alert_lib/Sb_Broadband.sweet_alert_lib.iml" />
+    </modules>
+  </component>
+</project>

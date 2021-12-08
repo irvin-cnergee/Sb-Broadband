@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/top_clr"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/id_top_color"/>
+
+    <ImageView
+        android:layout_below="@+id/top_clr"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:layout_below="@+id/top"
+        android:id="@+id/company_logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/cnergee_logo"/>
+
+    <!--<ImageView
+        android:layout_below="@+id/company_logo"
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:foregroundGravity="center"
+        android:src="@mipmap/profile_img"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/company_logo"
+        android:id="@+id/profile_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:src="@drawable/person"
+        android:layout_margin="15dp"/>
+
+
+    <cnergee.sbbroadband.widgets.MyTextView
+        android:layout_below="@+id/profile_img"
+        android:id="@+id/employee_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test CRM"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:fontName="@string/font_name"/>
+
+    <View
+        android:layout_below="@+id/employee_name"
+        android:id="@+id/test_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorAccent"></View>
+
+    <ScrollView
+        android:id="@+id/info_ll"
+        android:layout_below="@+id/test_view"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/emp_code_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Employee Code :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/emp_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="1234"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/company_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Company Name :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/company"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="Cnergee Technology"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/dob_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Date of Birth :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/dob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="15/11/1980"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/doj_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Date of Joining :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/doj"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="10/10/1912"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/depart_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Department :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/depart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="Management"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/designation_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Designation :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/designation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="Area Engineer"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/bld_grp_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Blood Group :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/bld_grp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="A+"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/email_id_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.90"
+                    android:text="Email Id :"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.10"
+                    android:text="support@cnergee.com"
+                    android:textColor="@color/id_top_color"
+                    app:fontName="@string/font_name"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/signature"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/signature"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="right"/>
+
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/sign_title"
+                android:layout_below="@+id/signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authorised Signature"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/id_top_color"
+                app:fontName="@string/font_name"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/id_top_color">
+            <cnergee.sbbroadband.widgets.MyTextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                app:fontName="@string/font_name"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

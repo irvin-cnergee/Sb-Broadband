@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="MyTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="fontName_radio" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyButton">
+        <attr name="fontName_button" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCheckbox">
+        <attr name="fontName_check" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="cv_titleText" format="string" />
+        <attr name="cv_subtitleText" format="string" />
+        <attr name="cv_titleSize" format="dimension" />
+        <attr name="cv_subtitleSize" format="dimension" />
+        <attr name="cv_titleSubtitleSpace" format="float" />
+        <attr name="cv_strokeWidthSize" format="float" />
+        <attr name="cv_fillRadius" format="float" />
+        <attr name="cv_titleColor" format="color" />
+        <attr name="cv_subtitleColor" format="color" />
+        <attr name="cv_fillColor" format="color" />
+        <attr name="cv_strokeColorValue" format="color" />
+        <attr name="cv_backgroundColorValue" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleAnimatedCheckBox">
+        <attr name="cb_color" format="color" />
+        <attr name="cb_pressed_ring_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SmoothCheckBox">
+        <!--<attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titlesize" format="dimension" />-->
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="lv_title" format="string" />
+        <attr name="lv_loading" format="boolean" />
+        <attr name="lv_color" format="color" />
+        <attr name="lv_small" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+</resources>

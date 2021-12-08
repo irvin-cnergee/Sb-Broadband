@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/notifications"
+            android:textSize="20sp"
+            app:fontName="@string/font_name"/>
+    </android.support.v7.widget.Toolbar>
+
+    <developer.app.loadingview.ProgressWheel
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        wheel:matProg_circleRadius="@dimen/wheel_radius"
+        android:visibility="visible"
+        wheel:matProg_progressIndeterminate="true"
+        wheel:matProg_barColor="@color/bg_end"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/img_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_notification"
+        android:scaleType="centerInside"
+        android:visibility="gone"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

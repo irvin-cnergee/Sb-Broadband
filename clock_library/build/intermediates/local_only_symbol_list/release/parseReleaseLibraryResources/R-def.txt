@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+attr? canvasColor
+attr? clockColor
+attr? dialColor
+attr? dialRadius
+attr? fontName
+attr? hourFormat
+attr? textColor
+attr? trackSize
+string outOfRangeExceptionMessage
+string outOfRangeExceptionMessage2
+styleable Picker canvasColor clockColor textColor fontName dialColor hourFormat trackSize dialRadius

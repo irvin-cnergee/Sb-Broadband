@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:padding="5dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.31 PM"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"/>
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="#e1e1e1"
+            class="cnergee.sbbroadband.widgets.CircleView"/>
+
+        <cnergee.sbbroadband.widgets.CircleView
+            android:id="@+id/circleview"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cv_subtitleText=""
+            app:cv_titleSize="15dp"
+            app:cv_subtitleSize="9dp"
+            app:cv_titleColor="@android:color/white"
+            app:cv_backgroundColorValue="@android:color/white"
+            app:cv_strokeColorValue="@android:color/black"
+            app:cv_fillRadius="0.9"
+            app:cv_strokeWidthSize="2"/>
+
+        <view
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="#e1e1e1"
+            class="cnergee.sbbroadband.widgets.CircleView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priyanka Pawar"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="@dimen/default_hdr_size"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"/>
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/address"
+            android:gravity="left"
+            android:textSize="@dimen/default_text_size"
+            android:maxLength="50"
+            android:textColor="@color/info_font"
+            app:fontName="@string/font_name"
+            android:lineSpacingMultiplier="1.3"/>
+
+        <cnergee.sbbroadband.widgets.MyTextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/total_rs"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="@dimen/default_hdr_size"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            app:fontName="@string/font_name"/>
+
+    </LinearLayout>
+
+</LinearLayout>

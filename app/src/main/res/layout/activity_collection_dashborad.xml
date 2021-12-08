@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_collection_dashborad"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="cnergee.sbbroadband.CollectionDashboradActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <!--    <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search"
+            android:layout_centerHorizontal="true" />-->
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_toolbar"
+        android:fillViewport="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_below="@+id/ll_toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <cnergee.sbbroadband.widgets.MyEditText
+                    android:id="@+id/met_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:hint="@string/search_hint"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textSize="@dimen/content_hdr"
+                    app:fontName="@string/font_name"
+                    android:background="@drawable/reactangle_shape"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/search_btn"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="5"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="40dp"
+                        android:textColor="@android:color/black"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Today's Pickup"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@android:color/black"
+                        app:fontName="@string/font_name"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/info_font"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/total_rs"
+                        android:textStyle="bold"
+                        android:textSize="40dp"
+                        android:textColor="@android:color/black"
+                        app:fontName="@string/font_name"/>
+
+                    <cnergee.sbbroadband.widgets.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Today's Collection"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/default_text_size"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@android:color/black"
+                        app:fontName="@string/font_name"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <cnergee.sbbroadband.widgets.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Pickup Requests"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/default_hdr_size"
+                    android:textColor="@android:color/black"
+                    app:fontName="@string/font_name"
+                    android:layout_marginBottom="10dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/info_font"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"/>
+            </LinearLayout>
+
+           <!-- <include layout="@layout/rowitem_pickup" />-->
+
+
+        </LinearLayout>
+   <!-- </ScrollView>-->
+
+</RelativeLayout>
